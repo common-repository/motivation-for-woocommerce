@@ -1,0 +1,62 @@
+/**
+ * Main CSS
+ */
+
+/* Notice */
+.woo-motivation-satisfaction{
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+.woo-motivation-gift-item, .woo-motivation-cta, .woo-motivation-discount-item{
+	display: block;
+	width: 50%;
+	float: left;
+}
+.woo-motivation-discount-item > span{
+    border: solid 1px;
+    padding: 10px 20px;
+    display: inline-block;
+    background: green;
+    color: #fff;
+}
+.woo-motivation-satisfaction.single .woo-motivation-gift-item, .woo-motivation-satisfaction.single .woo-motivation-cta, .woo-motivation-satisfaction.single .woo-motivation-discount-item {
+	width: 100%;
+}
+.woo-motivation-gift-item img {
+	display: inline-block;
+}
+.woo-motivation-gift-item a{
+	float: left !important; 
+	padding: 0 !important;
+}
+.woo-motivation-cta{
+	text-align: right;
+}
+@media screen and (max-width: 480px){
+	.woo-motivation-satisfaction{
+		display: block;
+		width: 100%;
+	}
+	.woo-motivation-cta a{
+		float: none !important;
+	}
+	.woo-motivation-gift-item a{
+		float: none !important;
+	}
+	.woo-motivation-gift-item, .woo-motivation-cta, .woo-motivation-discount-item{
+		width: 100%;
+		text-align: center;
+		margin: 10px 0;
+	}
+}
+.woo-motivation-cart-banner{
+	background-color: #cc9c18;
+	border-left: .6180469716em solid rgba(0,0,0,.15);
+}
+.woo-motivation-cart-banner.succeed-border{
+	background-color: #0f834d;
+}
+.woo-motivation-cart-banner *{
+	color: #fff !important;
+}

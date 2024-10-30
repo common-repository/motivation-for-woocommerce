@@ -1,0 +1,112 @@
+/*
+ ** Admin Styles
+*/
+
+/* Container */
+#woo_motivation_box .woo_motivation_container{
+    overflow: hidden;
+    background: #fff;
+    background: linear-gradient(90deg,#fafafa 0,#fafafa 180px,#fff 180px,#fff 100%);
+}
+/* Box Navigation */
+#woo_motivation_box .woo_motivation_nav{
+	position: relative;
+	float: left;
+	list-style: none;
+	width: 180px;
+	line-height: 1em;
+	margin: 0 0 -1px 0;
+	padding: 0;
+	background-color: #fafafa;
+	border-right: 1px solid #eee;
+	box-sizing: border-box;
+}
+#woo_motivation_box .woo_motivation_nav li {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+#woo_motivation_box .woo_motivation_nav li > a{
+    display: block;
+    margin: 0;
+    padding: 20px;
+    line-height: 20px!important;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    box-shadow: none;
+}
+
+/* Box Content */
+#woo_motivation_box .woo_motivation_content{
+	float: left;
+	width: calc(100% - 180px);
+	margin-left: -1px;
+	border-left: 1px solid #eee;
+	min-height: 500px;
+}
+#woo_motivation_box .woo_motivation_content .sectioned{
+    border-bottom: solid 1px #ddd;
+}
+/* Box Section */
+#woo_motivation_box .woo_motivation_section{
+	padding: 0 25px;
+}
+
+/* Input Radio */
+#woo_motivation_box .input-label{
+	padding: 10px 15px;
+	margin-right: 5px;
+	background-color: #fafafa;
+	border: 1px solid #eee;
+}
+#woo_motivation_box .input-label.active, .woo_motivation_nav > li > a.active{
+	background-color: #00a6a6;
+	color: #fff;
+}
+
+/* Notice types*/
+.input-label.blue.active, .post-list-type.notice{
+	background-color: #3d9cd2 !important;
+	border-left: 0 !important;
+}
+.input-label.green.active, .post-list-type.success{
+	background-color: #0f834d !important;
+}
+.input-label.red.active, .post-list-type.error{
+	background-color: #e2401c !important;
+}
+
+/* Tab Vision */
+.woo_motivation_section{
+	display: none;
+}
+.woo_motivation_section.active{
+	display: block;
+}
+.woo-motivation-tab-section{
+	display: none;
+}
+.woo-motivation-tab-section.active{
+	display: table-row;
+}
+.woo_motivation_nav *{
+	-webkit-transition: none !important;
+    -moz-transition:    none !important;
+    -o-transition:      none !important;
+    -ms-transition:     none !important;
+    transition:         none !important;
+}
+
+/* Post List */
+.post-list-type{
+	padding: 12px 25px;
+	min-width: 50px;
+	text-align: center;
+	display: inline-block;
+	color: #fff;
+	background-color: #000;
+	text-transform: capitalize;
+	font-weight: 600;
+}
